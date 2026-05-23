@@ -1,0 +1,204 @@
+.carousel-board {
+  grid-template-columns: repeat(2, 540px);
+  gap: 24px;
+  padding: 32px;
+}
+
+.carousel-card {
+  display: grid;
+  grid-template-rows: auto 188px 1fr;
+  gap: 24px;
+  width: 540px;
+  height: 540px;
+  padding: 34px;
+}
+
+.carousel-card .vl-brand {
+  align-self: start;
+}
+
+.number {
+  right: 34px;
+  top: 28px;
+  font-size: 2rem;
+}
+
+.copy {
+  position: static;
+  align-self: end;
+}
+
+.card-2 .vl-label,
+.card-4 .vl-label,
+.card-5 .vl-label {
+  margin-bottom: 12px;
+}
+
+.carousel-card .vl-heading {
+  font-size: 2.55rem;
+}
+
+.card-2 .vl-heading,
+.card-4 .vl-heading,
+.card-5 .vl-heading {
+  font-size: 2.35rem;
+}
+
+.map-scene {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  height: 100%;
+  border-radius: var(--vl-radius-md);
+}
+
+.map-pin {
+  width: 50px;
+  height: 36px;
+}
+
+.map-pin.a {
+  left: 34px;
+  top: 34px;
+}
+
+.map-pin.b {
+  left: 158px;
+  top: 72px;
+}
+
+.map-pin.c {
+  right: 44px;
+  top: 28px;
+}
+
+.search-results,
+.review-stack,
+.mistakes,
+.checklist,
+.guide-cover {
+  position: static;
+}
+
+.result {
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
+  padding: 11px;
+}
+
+.result .vl-thumb {
+  width: 54px;
+  height: 44px;
+}
+
+.result.strong {
+  border: 2px solid var(--vl-sea);
+}
+
+.result strong,
+.result p {
+  font-size: 0.96rem;
+}
+
+.review {
+  padding: 14px;
+}
+
+.review strong {
+  color: var(--vl-coral);
+}
+
+.review p {
+  margin: 4px 0 0;
+  font-size: 0.98rem;
+}
+
+.review.muted {
+  opacity: 0.82;
+}
+
+.reply {
+  padding: 12px 14px;
+  border-radius: var(--vl-radius-md);
+  background: var(--vl-deep);
+  color: var(--vl-white);
+  font-size: 0.96rem;
+  font-weight: var(--vl-weight-black);
+}
+
+.mistakes div,
+.checklist div {
+  min-height: 45px;
+  padding: 12px 14px;
+  font-weight: var(--vl-weight-black);
+}
+
+.mistakes span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background: var(--vl-coral);
+}
+
+.checklist div {
+  position: relative;
+  padding-left: 42px;
+}
+
+.checklist div::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  background: var(--vl-sea);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.guide-cover {
+  align-self: stretch;
+  padding: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--vl-radius-md);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.guide-cover p {
+  margin: 0 0 10px;
+  color: #9ee1df;
+  font-size: 0.8rem;
+  font-weight: var(--vl-weight-black);
+  text-transform: uppercase;
+}
+
+.guide-cover strong {
+  display: block;
+  font-size: 2.15rem;
+  line-height: 1;
+}
+
+.cta {
+  position: absolute;
+  left: 34px;
+  bottom: 34px;
+}
+
+.card-6 {
+  grid-template-rows: auto 168px 1fr;
+}
+
+.card-6 .copy {
+  align-self: start;
+  padding-bottom: 44px;
+}
+
+@media (max-width: 1160px) {
+  .carousel-board {
+    grid-template-columns: 540px;
+  }
+}

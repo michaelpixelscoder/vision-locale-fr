@@ -1,0 +1,165 @@
+:root {
+  --vl-ink: #172326;
+  --vl-deep: #12343b;
+  --vl-sea: #2d8fa3;
+  --vl-sea-soft: #d8f1ed;
+  --vl-sand: #f4efe6;
+  --vl-sand-dark: #ece7de;
+  --vl-coral: #e86f51;
+  --vl-white: #ffffff;
+  --vl-line: rgba(18, 52, 59, 0.16);
+  --vl-shadow-soft: 0 12px 28px rgba(18, 52, 59, 0.14);
+  --vl-radius-sm: 6px;
+  --vl-radius-md: 8px;
+  --vl-radius-pill: 999px;
+  --vl-font: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  --vl-weight-bold: 800;
+  --vl-weight-black: 900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--vl-ink);
+  background: var(--vl-sand-dark);
+  font-family: var(--vl-font);
+}
+
+.ad-board {
+  display: grid;
+  justify-content: center;
+}
+
+.vl-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--vl-sand);
+  border: 1px solid var(--vl-line);
+}
+
+.vl-card-dark {
+  background: var(--vl-deep);
+  color: var(--vl-white);
+}
+
+.vl-brand {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+  color: var(--vl-deep);
+  font-weight: var(--vl-weight-black);
+}
+
+.vl-brand small {
+  color: var(--vl-sea);
+  font-size: 0.64rem;
+  font-weight: var(--vl-weight-black);
+  text-transform: uppercase;
+}
+
+.vl-card-dark .vl-brand,
+.vl-card-dark .vl-heading {
+  color: var(--vl-white);
+}
+
+.vl-card-dark .vl-brand small,
+.vl-card-dark .vl-label {
+  color: #9ee1df;
+}
+
+.vl-label {
+  margin: 0 0 10px;
+  color: var(--vl-sea);
+  font-size: 0.78rem;
+  font-weight: var(--vl-weight-black);
+  text-transform: uppercase;
+}
+
+.vl-heading {
+  margin: 0;
+  color: var(--vl-deep);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.vl-support {
+  margin: 14px 0 0;
+  line-height: 1.4;
+}
+
+.vl-number {
+  position: absolute;
+  color: rgba(18, 52, 59, 0.2);
+  font-weight: var(--vl-weight-black);
+}
+
+.vl-row {
+  border-radius: var(--vl-radius-md);
+  background: var(--vl-white);
+}
+
+.vl-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.vl-map {
+  background:
+    linear-gradient(90deg, transparent 16%, rgba(18, 52, 59, 0.09) 16% 18%, transparent 18% 66%, rgba(18, 52, 59, 0.09) 66% 68%, transparent 68%),
+    linear-gradient(0deg, transparent 36%, rgba(18, 52, 59, 0.09) 36% 39%, transparent 39% 70%, rgba(18, 52, 59, 0.09) 70% 73%, transparent 73%),
+    var(--vl-sea-soft);
+}
+
+.vl-rating-pin {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  border-radius: var(--vl-radius-pill);
+  background: var(--vl-white);
+  color: var(--vl-deep);
+  font-weight: var(--vl-weight-black);
+  box-shadow: var(--vl-shadow-soft);
+}
+
+.vl-mini-result {
+  display: grid;
+  align-items: center;
+  background: var(--vl-white);
+  border-radius: var(--vl-radius-md);
+}
+
+.vl-mini-result strong,
+.vl-mini-result p {
+  margin: 0;
+}
+
+.vl-mini-result p {
+  color: #5d6d70;
+  font-weight: var(--vl-weight-bold);
+}
+
+.vl-thumb {
+  display: block;
+  border-radius: var(--vl-radius-sm);
+  background: var(--vl-sea-soft);
+}
+
+.vl-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 7px 11px;
+  border-radius: var(--vl-radius-pill);
+  background: var(--vl-white);
+  color: var(--vl-deep);
+  font-size: 0.8rem;
+  font-weight: var(--vl-weight-black);
+}
+
+.vl-pill-action {
+  background: var(--vl-coral);
+  color: var(--vl-white);
+}

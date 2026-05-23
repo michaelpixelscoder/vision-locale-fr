@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guide envoye - Vision Locale Tourisme</title>
+    <meta name="description" content="Merci pour votre demande du Guide 2026 de la Visibilite Locale Touristique.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="tracking.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Vision Locale Tourisme">
+        <span>Vision Locale</span>
+        <small>Tourisme</small>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="guide.html">Apercu du guide</a>
+        <a class="nav-link" href="offre.html">Offres</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="offer-hero">
+        <p class="eyebrow">Guide demande</p>
+        <h1>Merci, votre demande est bien prise en compte.</h1>
+        <p class="lede">Le guide va vous etre envoye par email. Vous pouvez aussi consulter l'apercu HTML maintenant.</p>
+        <p>
+          <a class="button-link inline" href="guide.html" onclick="trackVisionLocale('ViewContent', {content_name: 'guide_preview'});">Voir le guide</a>
+          <a class="button-link secondary inline" href="mailto:contact@vision-locale.fr?subject=Mini-audit%20gratuit%20Vision%20Locale" onclick="trackVisionLocale('Contact', {content_name: 'mini_audit'});">Demander un mini-audit</a>
+        </p>
+      </section>
+    </main>
+
+    <script>
+      window.addEventListener("load", function () {
+        trackVisionLocale("Lead", { content_name: "guide_2026" });
+      });
+    </script>
+  </body>
+</html>

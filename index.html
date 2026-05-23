@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vision Locale Tourisme - Guide 2026</title>
+    <meta name="description" content="Telechargez le Guide 2026 de la Visibilite Locale Touristique pour rendre votre fiche Google plus rassurante avant la saison.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="tracking.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="Vision Locale Tourisme">
+        <span>Vision Locale</span>
+        <small>Tourisme</small>
+      </a>
+      <nav class="nav">
+        <a class="nav-link" href="guide.html">Apercu du guide</a>
+        <a class="nav-link" href="offre.html">Offres</a>
+        <a class="nav-link" href="privacy.html">Confidentialite</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Campings et activites touristiques du littoral</p>
+          <h1>Le Guide 2026 de la Visibilite Locale Touristique</h1>
+          <p class="lede">Rendez votre fiche Google plus rassurante avant la saison : avis, photos, informations pratiques et reponses qui inspirent confiance aux voyageurs.</p>
+          <form class="lead-form" name="guide-visibilite-locale" method="get" action="merci.html" onsubmit="trackVisionLocale('CompleteRegistration', {content_name: 'guide_2026'});">
+            <label>
+              Email professionnel
+              <input type="email" name="email" placeholder="vous@entreprise.fr" required>
+            </label>
+            <label>
+              Type d'etablissement
+              <select name="business_type" required>
+                <option value="">Selectionner</option>
+                <option>Camping</option>
+                <option>Activite nautique</option>
+                <option>Location saisonniere</option>
+                <option>Hotel ou residence</option>
+                <option>Restaurant de plage</option>
+                <option>Autre activite touristique</option>
+              </select>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="consent" required>
+              <span>J'accepte de recevoir le guide et des conseils de Vision Locale Tourisme. Je peux me desinscrire a tout moment.</span>
+            </label>
+            <button type="submit">Recevoir le guide</button>
+          </form>
+        </div>
+        <aside class="audit-panel">
+          <p class="panel-title">Dans le guide</p>
+          <ul>
+            <li>Les erreurs qui font perdre confiance.</li>
+            <li>Comment demander des avis sans enfreindre les regles.</li>
+            <li>Des modeles de reponses aux avis.</li>
+            <li>La checklist avant juillet-aout.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="band">
+        <div>
+          <h2>Pourquoi maintenant</h2>
+          <p>Avant de reserver, les voyageurs comparent rapidement les etablissements sur Google Maps. Une fiche incomplete, des avis sans reponse ou des photos anciennes peuvent suffire a faire choisir un concurrent.</p>
+        </div>
+        <div>
+          <h2>Pour qui</h2>
+          <p>Campings, bases nautiques, loueurs de bateaux, jet-ski, paddle, hotels independants, residences touristiques, paillotes et activites de loisirs autour de Montpellier.</p>
+        </div>
+        <div>
+          <h2>Prochaine etape</h2>
+          <p>Apres le guide, vous pourrez demander un mini-audit gratuit pour voir comment votre fiche Google se compare aux concurrents proches.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

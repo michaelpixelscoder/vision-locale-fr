@@ -7,6 +7,7 @@
     <meta name="description" content="Telechargez le Guide 2026 de la Visibilite Locale Touristique pour rendre votre fiche Google plus rassurante avant la saison.">
     <link rel="stylesheet" href="styles.css">
     <script src="tracking.js" defer></script>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -27,7 +28,7 @@
           <p class="eyebrow">Campings et activites touristiques du littoral</p>
           <h1>Le Guide 2026 de la Visibilite Locale Touristique</h1>
           <p class="lede">Rendez votre fiche Google plus rassurante avant la saison : avis, photos, informations pratiques et reponses qui inspirent confiance aux voyageurs.</p>
-          <form class="lead-form" name="guide-visibilite-locale" method="get" action="merci.html" onsubmit="trackVisionLocale('CompleteRegistration', {content_name: 'guide_2026'});">
+          <form class="lead-form" name="guide-visibilite-locale" method="get" action="merci.html" onsubmit="return submitGuideLead(event);">
             <label>
               Email professionnel
               <input type="email" name="email" placeholder="vous@entreprise.fr" required>

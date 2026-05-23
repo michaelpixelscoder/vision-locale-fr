@@ -1,0 +1,15 @@
+{
+  "name": "vision-locale-fr",
+  "version": "1.0.0",
+  "description": "Site statique pour `vision-locale.fr`, heberge via GitHub Pages.",
+  "scripts": {
+    "convex:codegen": "convex codegen",
+    "convex:deploy": "convex deploy --yes"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convex": "^1.39.1"
+  }
+}

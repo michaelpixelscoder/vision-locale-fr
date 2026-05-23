@@ -25,8 +25,24 @@ Renseigner les IDs dans `tracking.js` :
 - `googleTagId`
 - `metaPixelId`
 
+## Backend Convex
+
+Le formulaire envoie les leads vers Convex via `form.js`.
+
+Deployment utilise :
+
+- Convex deployment : `dev/michael-delaporte`
+- HTTP endpoint : `https://colorful-condor-335.convex.site`
+
+Le token de deploiement doit rester dans le secret GitHub `CONVEX_DEPLOY_KEY`.
+
 ## Formulaire
 
-Le formulaire est configure en `GET` vers `merci.html` pour fonctionner sur GitHub Pages sans serveur.
+Le formulaire capture :
 
-Pour capturer les emails en production, connecter ensuite un outil externe comme Formspree, Brevo, Tally ou ConvertKit.
+- email
+- type d'etablissement
+- source
+- page
+
+En cas d'erreur reseau, l'utilisateur est quand meme redirige vers `merci.html` pour ne pas casser l'experience.

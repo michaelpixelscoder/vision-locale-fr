@@ -7,6 +7,7 @@
     <meta name="description" content="Merci pour votre demande du Guide 2026 de la Visibilite Locale Touristique.">
     <link rel="stylesheet" href="styles.css">
     <script src="tracking.js" defer></script>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -26,8 +27,8 @@
         <h1>Merci, votre demande est bien prise en compte.</h1>
         <p class="lede">Le guide va vous etre envoye par email. Vous pouvez aussi consulter l'apercu HTML maintenant.</p>
         <p>
-          <a class="button-link inline" href="guide.html" onclick="trackVisionLocale('ViewContent', {content_name: 'guide_preview'});">Voir le guide</a>
-          <a class="button-link secondary inline" href="mailto:contact@vision-locale.fr?subject=Mini-audit%20gratuit%20Vision%20Locale" onclick="trackVisionLocale('Contact', {content_name: 'mini_audit'});">Demander un mini-audit</a>
+          <a class="button-link inline" href="guide.html" onclick="trackVisionLocale('ViewContent', {content_name: 'guide_preview'}); trackConvexEvent('ViewContent', 'guide_preview');">Voir le guide</a>
+          <a class="button-link secondary inline" href="mailto:contact@vision-locale.fr?subject=Mini-audit%20gratuit%20Vision%20Locale" onclick="trackVisionLocale('Contact', {content_name: 'mini_audit'}); trackConvexEvent('Contact', 'mini_audit');">Demander un mini-audit</a>
         </p>
       </section>
     </main>
@@ -35,6 +36,7 @@
     <script>
       window.addEventListener("load", function () {
         trackVisionLocale("Lead", { content_name: "guide_2026" });
+        trackConvexEvent("Lead", "guide_2026");
       });
     </script>
   </body>

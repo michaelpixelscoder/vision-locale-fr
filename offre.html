@@ -7,6 +7,7 @@
     <meta name="description" content="Offres Vision Locale Tourisme pour gerer les avis Google, la fiche Google et la visibilite locale des campings et activites touristiques.">
     <link rel="stylesheet" href="styles.css">
     <script src="tracking.js" defer></script>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header class="topbar">
@@ -40,7 +41,7 @@
             <li>Verification mensuelle des informations principales.</li>
             <li>Mini rapport mensuel.</li>
           </ul>
-          <a class="button-link" href="mailto:contact@vision-locale.fr?subject=Pack%20Saison" onclick="trackVisionLocale('Contact', {content_name: 'pack_saison'});">Demander le Pack Saison</a>
+          <a class="button-link" href="mailto:contact@vision-locale.fr?subject=Pack%20Saison" onclick="trackVisionLocale('Contact', {content_name: 'pack_saison'}); trackConvexEvent('Contact', 'pack_saison');">Demander le Pack Saison</a>
         </article>
 
         <article class="price-card featured">
@@ -55,7 +56,7 @@
             <li>Optimisation FAQ touristique.</li>
             <li>Suggestions photos et contenus saisonniers.</li>
           </ul>
-          <a class="button-link" href="mailto:contact@vision-locale.fr?subject=Pack%20Haute%20Saison" onclick="trackVisionLocale('Contact', {content_name: 'pack_haute_saison'});">Demander le Pack Haute Saison</a>
+          <a class="button-link" href="mailto:contact@vision-locale.fr?subject=Pack%20Haute%20Saison" onclick="trackVisionLocale('Contact', {content_name: 'pack_haute_saison'}); trackConvexEvent('Contact', 'pack_haute_saison');">Demander le Pack Haute Saison</a>
         </article>
       </section>
 
